@@ -1,0 +1,23 @@
+# Python venv
+torch_env/
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+Lib/
+Scripts/
+Include/
+share/
+
+# Large files
+*.zip
+*.pth
+*.pt
+*.h5
+*.ckpt
