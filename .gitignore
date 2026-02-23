@@ -14,10 +14,12 @@ Lib/
 Scripts/
 Include/
 share/
-
+PlantVillage/
+.ipynb_checkpoints/
 # Large files
 *.zip
 *.pth
 *.pt
 *.h5
 *.ckpt
+*.csv
