@@ -55,7 +55,7 @@ def predict_image(model_path, img_path, class_names):
     ])
 
     img = Image.open(img_path).convert('RGB')
-    img_tensor = transform(img).unsqueeze(0)
+    img_tensor = transform(img)
 
     # Predict
     with torch.no_grad():
