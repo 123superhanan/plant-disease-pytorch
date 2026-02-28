@@ -1,3 +1,5 @@
+from xml.parsers.expat import model
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -44,7 +46,7 @@ def predict_image(model_path, img_path, class_names):
 
     # Load model
     model = SmallCNN(len(class_names))
-    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=True))
     model.eval()
 
     # Preprocess
